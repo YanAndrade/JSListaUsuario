@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+    table(class="table")
+        tr(class="tr")
+            th Id
+            th Nome
+            th Sobrenome
+        
+        each val in list
+            tr
+                td= val.ID 
+                td= val.NOME
+                td= val.SOBRENOME
